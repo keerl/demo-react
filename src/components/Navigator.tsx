@@ -2,7 +2,7 @@ import * as React from 'react';
 import { BaseNavigationContainer } from '@react-navigation/core';
 import { stackNavigatorFactory } from 'react-nativescript-navigation';
 import { Menu } from './Menu';
-import { demos } from './linked-components/install';
+import { demos } from '../../../demo-snippets/react/install';
 
 const StackNavigator = stackNavigatorFactory();
 

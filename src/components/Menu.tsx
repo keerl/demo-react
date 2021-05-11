@@ -3,11 +3,13 @@ import { RouteProp } from '@react-navigation/core';
 import { FrameNavigationProp } from 'react-nativescript-navigation';
 import { MainStackParamList } from './NavigationParamList';
 
-import { demos } from './linked-components/install';
+import { demos } from '../../../demo-snippets/react/install';
 interface MenuProps {
     route: RouteProp<MainStackParamList, 'menu'>;
     navigation: FrameNavigationProp<MainStackParamList, 'menu'>;
 }
+
+declare const isDevelopment: boolean;
 
 export function Menu({ navigation }: MenuProps) {
     function goToDemo(component) {
