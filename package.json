@@ -38,7 +38,6 @@
         "template"
     ],
     "dependencies": {
-        "@nativescript-community/plugin-seed": "../plugin",
         "@nativescript/core": "~8.0.0",
         "@nativescript/theme": "~3.0.1",
         "@react-navigation/core": "^5.15.3",
