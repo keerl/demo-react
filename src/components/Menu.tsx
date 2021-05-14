@@ -9,18 +9,18 @@ interface MenuProps {
     navigation: FrameNavigationProp<MainStackParamList, 'menu'>;
 }
 
-declare const isDevelopment: boolean;
+declare const demoRedirect: string;
 
 export function Menu({ navigation }: MenuProps) {
     function goToDemo(component) {
         navigation.navigate(component);
     }
 
-    if (isDevelopment) {
-        const Development = demos.find(({ name }) => name === 'Development');
-        if (Development) {
+    if (demoRedirect) {
+        const Demo = demos.find(({ path }) => path === demoRedirect);
+        if (Demo) {
             setTimeout(() => {
-                navigation.navigate('development');
+                navigation.navigate(Demo.path);
             }, 0);
         }
     }
