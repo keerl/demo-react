@@ -20,6 +20,7 @@ export function Menu({ navigation }: MenuProps) {
         const Demo = demos.find(({ path }) => path === demoRedirect);
         if (Demo) {
             setTimeout(() => {
+                // @ts-ignore
                 navigation.navigate(Demo.path);
             }, 0);
         }
